@@ -163,7 +163,7 @@ class InputListenerState extends State<InputListener>
       _conn!.show();
     } else {
       final config = TextInputConfiguration();
-      final client = TerminalTextInputClient(onInput, onAction);
+      final client = TerminalTextInputClient(onInput, onAction) : super();
       _conn = TextInput.attach(client, config);
 
       _conn!.show();
