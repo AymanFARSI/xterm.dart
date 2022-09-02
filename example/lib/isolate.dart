@@ -43,23 +43,15 @@ class MyHomePage extends StatefulWidget {
 }
 
 class FakeTerminalBackend extends TerminalBackend {
-  // we do a late initialization of those backend members as the backend gets
-  // transferred into the Isolate.
-  // It is not allowed to e.g. transfer closures which we can not guarantee
-  // to not exist in our member types.
-  // The Isolate will call init() once it starts (from its context) and that is
-  // the place where we initialize those members
-  late final _exitCodeCompleter;
+  final _exitCodeCompleter = Completer<int>();
   // ignore: close_sinks
-  late final _outStream;
+  final _outStream = StreamController<String>();
 
   @override
   Future<int> get exitCode => _exitCodeCompleter.future;
 
   @override
   void init() {
-    _exitCodeCompleter = Completer<int>();
-    _outStream = StreamController<String>();
     _outStream.sink.add('xterm.dart demo');
     _outStream.sink.add('\r\n');
     _outStream.sink.add('\$ ');

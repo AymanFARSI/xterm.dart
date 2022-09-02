@@ -259,17 +259,11 @@ class CustomTextEditState extends State<CustomTextEdit>
   }
   
   @override
-  void insertTextPlaceholder(Size size) {
-    // TODO: implement insertTextPlaceholder
-  }
-  
+  void showToolbar() {}
+
   @override
-  void removeTextPlaceholder() {
-    // TODO: implement removeTextPlaceholder
-  }
-  
+  void insertTextPlaceholder(Size size) {}
+
   @override
-  void showToolbar() {
-    // TODO: implement showToolbar
-  }
+  void removeTextPlaceholder() {}
 }

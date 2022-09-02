@@ -98,7 +98,7 @@ packages:
       name: fake_async
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.3.0"
+    version: "1.2.0"
   ffi:
     dependency: transitive
     description:
@@ -136,11 +136,7 @@ packages:
       name: material_color_utilities
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
-    version: "0.1.4"
-=======
     version: "0.1.3"
->>>>>>> orig/v3
   meta:
     dependency: transitive
     description:
@@ -154,7 +150,7 @@ packages:
       name: path
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.8.1"
+    version: "1.8.0"
   pinenacl:
     dependency: transitive
     description:
@@ -168,11 +164,7 @@ packages:
       name: platform_info
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
-    version: "3.2.0"
-=======
     version: "3.1.0"
->>>>>>> orig/v3
   pointycastle:
     dependency: transitive
     description:
@@ -180,15 +172,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.4.0"
-  pty:
-    dependency: "direct main"
-    description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "5c3798fef3f304316a8c8b8b66d611c944213dac"
-      url: "https://github.com/TerminalStudio/pty"
-    source: git
-    version: "0.2.2-pre"
   quiver:
     dependency: transitive
     description:
@@ -242,7 +225,7 @@ packages:
       name: test_api
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.4.9"
+    version: "0.4.8"
   typed_data:
     dependency: transitive
     description:
@@ -256,7 +239,7 @@ packages:
       name: vector_math
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.1.2"
+    version: "2.1.1"
   win32:
     dependency: transitive
     description:
@@ -272,5 +255,5 @@ packages:
     source: path
     version: "2.6.0"
 sdks:
-  dart: ">=2.17.0-0 <3.0.0"
+  dart: ">=2.14.0 <3.0.0"
   flutter: ">=2.0.0"

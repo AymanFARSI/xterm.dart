@@ -24,13 +24,6 @@ dependencies:
   xterm:
     path: ../
 
-<<<<<<< HEAD
-  dartssh2:
-    git:
-      url: https://github.com/TerminalStudio/dartssh2
-  pty:
-    git: https://github.com/TerminalStudio/pty
-=======
   dartssh2: ^2.5.0
 
 >>>>>>> orig/v3
